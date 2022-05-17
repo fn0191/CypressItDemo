@@ -1,0 +1,30 @@
+{
+     
+    "ignoreTestFiles": [
+      "**/1-getting-started/*", 
+      "**/2-advanced-examples/*"
+    ],
+    
+    "viewport": 1920,
+    "viewportHeight": 1080,
+    "chromeWebSecurity": false,
+
+    "defaultCommandTimeout": 10000,
+    "e2e": {
+     "defaultCommandTimeout": 20000,
+     "slowTestThreshold": 3000
+    },
+    "component": {
+      "slowTestThreshold": 150
+},
+
+"reporter": "cypress-mochawesome-reporter",
+"reporterOptions": {
+"reportDir": "cypress/reports",
+"charts": true,
+"reportPageTitle": "My Test Suite",
+"embeddedScreenshots": true,
+"inlineAssets": true
+},
+"video": false  
+}
